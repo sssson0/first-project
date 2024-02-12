@@ -24,7 +24,7 @@ pickRandomNum()
 function play(){
     let userValue = userInput.value;
 
-    //왜꼭 리턴을 써야 첫번쨰줄이실행이되지
+    
     if(userValue < 1 || userValue > 100){
         resultArea.textContent ="1 ~ 100 사이의 숫자를 입력해주세요!"
         return;
@@ -63,7 +63,7 @@ chanceArea.textContent = `남은 찬스 : ${chances}번`;
 function reset(){
     userInput.value = "";
     pickRandomNum();
-    resultArea.textContent = "결과값"
+    resultArea.textContent = "결과를 확인해봐요!"
 
 }
 
